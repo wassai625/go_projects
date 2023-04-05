@@ -3,3 +3,6 @@
 2023/03/29 12:18:45 main.go:16: test
 2023/04/04 08:22:01 main.go:16: test
 2023/04/04 08:25:18 main.go:16: test
+2023/04/05 10:41:02 users.go:33: Binary was compiled with 'CGO_ENABLED=0', go-sqlite3 requires cgo to work. This is a stub
+2023/04/05 10:51:08 users.go:33: Binary was compiled with 'CGO_ENABLED=0', go-sqlite3 requires cgo to work. This is a stub
+2023/04/05 11:20:29 users.go:33: Binary was compiled with 'CGO_ENABLED=0', go-sqlite3 requires cgo to work. This is a stub
