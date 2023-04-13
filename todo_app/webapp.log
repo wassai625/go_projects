@@ -16,3 +16,4 @@
 2023/04/10 15:40:51 main.go:16: test
 2023/04/13 10:50:45 main.go:16: test
 2023/04/13 10:54:56 main.go:16: test
+2023/04/13 12:40:19 todos.go:96: near "where": syntax error
