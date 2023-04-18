@@ -1,15 +1,11 @@
 package controllers
 
 import (
-	"fmt"
+	// "fmt"
 	"net/http"
-	"text/template"
+	// "text/template"
 )
 
 func top(w http.ResponseWriter, r *http.Request) {
-	t, err := template.ParseFiles("app/models/views/templates/top.html")
-	if err != nil {
-		fmt.Println("aaaaa")
-	}
-	t.Execute(w, "hello")
+	generateHTML(w, "Hello", "layout", "top")
 }
