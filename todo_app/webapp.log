@@ -3014,3 +3014,714 @@ net/http.(*conn).serve(0xc000146090, {0x7ff618e000b8, 0xc00007b620})
 	C:/Program Files/Go/src/net/http/server.go:1995 +0x612
 created by net/http.(*Server).Serve
 	C:/Program Files/Go/src/net/http/server.go:3089 +0x5ed
+2023/04/17 16:08:06 server.go:3217: http: panic serving 127.0.0.1:63561: open /app/views/templates/layout.html: The system cannot find the path specified.
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1854 +0xbf
+panic({0x7ff6bfa89020, 0xc000182150})
+	C:/Program Files/Go/src/runtime/panic.go:890 +0x263
+html/template.Must(...)
+	C:/Program Files/Go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x7ff6bfb73490?, 0xc0001b2000}, {0x7ff6bfa64700, 0x7ff6bfb70780}, {0xc00006fa28?, 0x2, 0x7ff6bf67c866?})
+	C:/Users/owner/go_projects/todo_app/app/controllers/server.go:17 +0x237
+todo_app/app/controllers.top({0x7ff6bfb73490?, 0xc0001b2000?}, 0xffffffffffffffff?)
+	C:/Users/owner/go_projects/todo_app/app/controllers/route_main.go:10 +0x75
+net/http.HandlerFunc.ServeHTTP(0xc00007db80?, {0x7ff6bfb73490?, 0xc0001b2000?}, 0x7ff6bf5aecc8?)
+	C:/Program Files/Go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x7ff6bfb73490, 0xc0001b2000}, 0xc000192000)
+	C:/Program Files/Go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000182030?}, {0x7ff6bfb73490, 0xc0001b2000}, 0xc000192000)
+	C:/Program Files/Go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00014a090, {0x7ff6bfb73758, 0xc00007b860})
+	C:/Program Files/Go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3089 +0x5ed
+2023/04/17 16:08:06 server.go:3217: http: panic serving 127.0.0.1:63562: open /app/views/templates/layout.html: The system cannot find the path specified.
+goroutine 8 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1854 +0xbf
+panic({0x7ff6bfa89020, 0xc000182240})
+	C:/Program Files/Go/src/runtime/panic.go:890 +0x263
+html/template.Must(...)
+	C:/Program Files/Go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x7ff6bfb73490?, 0xc0001b21c0}, {0x7ff6bfa64700, 0x7ff6bfb70780}, {0xc00009fa28?, 0x2, 0x7ff6bf67c866?})
+	C:/Users/owner/go_projects/todo_app/app/controllers/server.go:17 +0x237
+todo_app/app/controllers.top({0x7ff6bfb73490?, 0xc0001b21c0?}, 0xffffffffffffffff?)
+	C:/Users/owner/go_projects/todo_app/app/controllers/route_main.go:10 +0x75
+net/http.HandlerFunc.ServeHTTP(0xc000150000?, {0x7ff6bfb73490?, 0xc0001b21c0?}, 0x7ff6bf5aecc8?)
+	C:/Program Files/Go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x7ff6bfb73490, 0xc0001b21c0}, 0xc000096000)
+	C:/Program Files/Go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc00008c030?}, {0x7ff6bfb73490, 0xc0001b21c0}, 0xc000096000)
+	C:/Program Files/Go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00014a120, {0x7ff6bfb73758, 0xc00007b860})
+	C:/Program Files/Go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3089 +0x5ed
+2023/04/17 16:08:06 server.go:3217: http: panic serving 127.0.0.1:63563: open /app/views/templates/layout.html: The system cannot find the path specified.
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1854 +0xbf
+panic({0x7ff6bfa89020, 0xc00007ba70})
+	C:/Program Files/Go/src/runtime/panic.go:890 +0x263
+html/template.Must(...)
+	C:/Program Files/Go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x7ff6bfb73490?, 0xc000158000}, {0x7ff6bfa64700, 0x7ff6bfb70780}, {0xc000073a28?, 0x2, 0x7ff6bf67c866?})
+	C:/Users/owner/go_projects/todo_app/app/controllers/server.go:17 +0x237
+todo_app/app/controllers.top({0x7ff6bfb73490?, 0xc000158000?}, 0xffffffffffffffff?)
+	C:/Users/owner/go_projects/todo_app/app/controllers/route_main.go:10 +0x75
+net/http.HandlerFunc.ServeHTTP(0xc000220000?, {0x7ff6bfb73490?, 0xc000158000?}, 0x7ff6bf5aecc8?)
+	C:/Program Files/Go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x7ff6bfb73490, 0xc000158000}, 0xc000142100)
+	C:/Program Files/Go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc00007b9b0?}, {0x7ff6bfb73490, 0xc000158000}, 0xc000142100)
+	C:/Program Files/Go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc000194240, {0x7ff6bfb73758, 0xc00007b860})
+	C:/Program Files/Go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3089 +0x5ed
+2023/04/17 16:08:08 server.go:3217: http: panic serving 127.0.0.1:63564: open /app/views/templates/layout.html: The system cannot find the path specified.
+goroutine 21 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1854 +0xbf
+panic({0x7ff6bfa89020, 0xc000182480})
+	C:/Program Files/Go/src/runtime/panic.go:890 +0x263
+html/template.Must(...)
+	C:/Program Files/Go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x7ff6bfb73490?, 0xc0001b2380}, {0x7ff6bfa64700, 0x7ff6bfb70780}, {0xc00009fa28?, 0x2, 0x7ff6bf67c866?})
+	C:/Users/owner/go_projects/todo_app/app/controllers/server.go:17 +0x237
+todo_app/app/controllers.top({0x7ff6bfb73490?, 0xc0001b2380?}, 0xffffffffffffffff?)
+	C:/Users/owner/go_projects/todo_app/app/controllers/route_main.go:10 +0x75
+net/http.HandlerFunc.ServeHTTP(0xc000220280?, {0x7ff6bfb73490?, 0xc0001b2380?}, 0x7ff6bf5aecc8?)
+	C:/Program Files/Go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x7ff6bfb73490, 0xc0001b2380}, 0xc000142200)
+	C:/Program Files/Go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc00007bad0?}, {0x7ff6bfb73490, 0xc0001b2380}, 0xc000142200)
+	C:/Program Files/Go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc0001942d0, {0x7ff6bfb73758, 0xc00007b860})
+	C:/Program Files/Go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3089 +0x5ed
+2023/04/17 16:08:08 server.go:3217: http: panic serving 127.0.0.1:63565: open /app/views/templates/layout.html: The system cannot find the path specified.
+goroutine 10 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1854 +0xbf
+panic({0x7ff6bfa89020, 0xc000182540})
+	C:/Program Files/Go/src/runtime/panic.go:890 +0x263
+html/template.Must(...)
+	C:/Program Files/Go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x7ff6bfb73490?, 0xc0001b2540}, {0x7ff6bfa64700, 0x7ff6bfb70780}, {0xc000073a28?, 0x2, 0x7ff6bf67c866?})
+	C:/Users/owner/go_projects/todo_app/app/controllers/server.go:17 +0x237
+todo_app/app/controllers.top({0x7ff6bfb73490?, 0xc0001b2540?}, 0xffffffffffffffff?)
+	C:/Users/owner/go_projects/todo_app/app/controllers/route_main.go:10 +0x75
+net/http.HandlerFunc.ServeHTTP(0xc000150280?, {0x7ff6bfb73490?, 0xc0001b2540?}, 0x7ff6bf5aecc8?)
+	C:/Program Files/Go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x7ff6bfb73490, 0xc0001b2540}, 0xc000192200)
+	C:/Program Files/Go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001823c0?}, {0x7ff6bfb73490, 0xc0001b2540}, 0xc000192200)
+	C:/Program Files/Go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00014a2d0, {0x7ff6bfb73758, 0xc00007b860})
+	C:/Program Files/Go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3089 +0x5ed
+2023/04/17 16:08:08 server.go:3217: http: panic serving 127.0.0.1:63566: open /app/views/templates/layout.html: The system cannot find the path specified.
+goroutine 24 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1854 +0xbf
+panic({0x7ff6bfa89020, 0xc00008c180})
+	C:/Program Files/Go/src/runtime/panic.go:890 +0x263
+html/template.Must(...)
+	C:/Program Files/Go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x7ff6bfb73490?, 0xc0000bc000}, {0x7ff6bfa64700, 0x7ff6bfb70780}, {0xc0000a7a28?, 0x2, 0x7ff6bf67c866?})
+	C:/Users/owner/go_projects/todo_app/app/controllers/server.go:17 +0x237
+todo_app/app/controllers.top({0x7ff6bfb73490?, 0xc0000bc000?}, 0xffffffffffffffff?)
+	C:/Users/owner/go_projects/todo_app/app/controllers/route_main.go:10 +0x75
+net/http.HandlerFunc.ServeHTTP(0xc000220500?, {0x7ff6bfb73490?, 0xc0000bc000?}, 0x7ff6bf5aecc8?)
+	C:/Program Files/Go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x7ff6bfb73490, 0xc0000bc000}, 0xc000096100)
+	C:/Program Files/Go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc00008c0c0?}, {0x7ff6bfb73490, 0xc0000bc000}, 0xc000096100)
+	C:/Program Files/Go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc0001945a0, {0x7ff6bfb73758, 0xc00007b860})
+	C:/Program Files/Go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3089 +0x5ed
+2023/04/17 16:08:10 server.go:3217: http: panic serving 127.0.0.1:63567: open /app/views/templates/layout.html: The system cannot find the path specified.
+goroutine 35 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1854 +0xbf
+panic({0x7ff6bfa89020, 0xc00008c300})
+	C:/Program Files/Go/src/runtime/panic.go:890 +0x263
+html/template.Must(...)
+	C:/Program Files/Go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x7ff6bfb73490?, 0xc0000bc1c0}, {0x7ff6bfa64700, 0x7ff6bfb70780}, {0xc0000a3a28?, 0x2, 0x7ff6bf67c866?})
+	C:/Users/owner/go_projects/todo_app/app/controllers/server.go:17 +0x237
+todo_app/app/controllers.top({0x7ff6bfb73490?, 0xc0000bc1c0?}, 0xffffffffffffffff?)
+	C:/Users/owner/go_projects/todo_app/app/controllers/route_main.go:10 +0x75
+net/http.HandlerFunc.ServeHTTP(0xc0000f0000?, {0x7ff6bfb73490?, 0xc0000bc1c0?}, 0x7ff6bf5aecc8?)
+	C:/Program Files/Go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x7ff6bfb73490, 0xc0000bc1c0}, 0xc000142300)
+	C:/Program Files/Go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc00007bb90?}, {0x7ff6bfb73490, 0xc0000bc1c0}, 0xc000142300)
+	C:/Program Files/Go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc0000a8120, {0x7ff6bfb73758, 0xc00007b860})
+	C:/Program Files/Go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3089 +0x5ed
+2023/04/17 16:09:13 server.go:3217: http: panic serving 127.0.0.1:63601: open /app/views/templates/layout.html: The system cannot find the path specified.
+goroutine 12 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1854 +0xbf
+panic({0x7ff6bfa89020, 0xc00008c480})
+	C:/Program Files/Go/src/runtime/panic.go:890 +0x263
+html/template.Must(...)
+	C:/Program Files/Go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x7ff6bfb73490?, 0xc0000bc380}, {0x7ff6bfa64700, 0x7ff6bfb70780}, {0xc00009fa28?, 0x2, 0x7ff6bf67c866?})
+	C:/Users/owner/go_projects/todo_app/app/controllers/server.go:17 +0x237
+todo_app/app/controllers.top({0x7ff6bfb73490?, 0xc0000bc380?}, 0xffffffffffffffff?)
+	C:/Users/owner/go_projects/todo_app/app/controllers/route_main.go:10 +0x75
+net/http.HandlerFunc.ServeHTTP(0xc000150780?, {0x7ff6bfb73490?, 0xc0000bc380?}, 0x7ff6bf5aecc8?)
+	C:/Program Files/Go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x7ff6bfb73490, 0xc0000bc380}, 0xc000096300)
+	C:/Program Files/Go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc00008c360?}, {0x7ff6bfb73490, 0xc0000bc380}, 0xc000096300)
+	C:/Program Files/Go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00014a3f0, {0x7ff6bfb73758, 0xc00007b860})
+	C:/Program Files/Go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3089 +0x5ed
+2023/04/17 16:09:13 server.go:3217: http: panic serving 127.0.0.1:63602: open /app/views/templates/layout.html: The system cannot find the path specified.
+goroutine 37 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1854 +0xbf
+panic({0x7ff6bfa89020, 0xc00008c570})
+	C:/Program Files/Go/src/runtime/panic.go:890 +0x263
+html/template.Must(...)
+	C:/Program Files/Go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x7ff6bfb73490?, 0xc0000bc540}, {0x7ff6bfa64700, 0x7ff6bfb70780}, {0xc0000a7a28?, 0x2, 0x7ff6bf67c866?})
+	C:/Users/owner/go_projects/todo_app/app/controllers/server.go:17 +0x237
+todo_app/app/controllers.top({0x7ff6bfb73490?, 0xc0000bc540?}, 0xffffffffffffffff?)
+	C:/Users/owner/go_projects/todo_app/app/controllers/route_main.go:10 +0x75
+net/http.HandlerFunc.ServeHTTP(0xc0000f0280?, {0x7ff6bfb73490?, 0xc0000bc540?}, 0x7ff6bf5aecc8?)
+	C:/Program Files/Go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x7ff6bfb73490, 0xc0000bc540}, 0xc000142400)
+	C:/Program Files/Go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc00007bd40?}, {0x7ff6bfb73490, 0xc0000bc540}, 0xc000142400)
+	C:/Program Files/Go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc0000a82d0, {0x7ff6bfb73758, 0xc00007b860})
+	C:/Program Files/Go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3089 +0x5ed
+2023/04/17 16:09:13 server.go:3217: http: panic serving 127.0.0.1:63603: open /app/views/templates/layout.html: The system cannot find the path specified.
+goroutine 40 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1854 +0xbf
+panic({0x7ff6bfa89020, 0xc0001826c0})
+	C:/Program Files/Go/src/runtime/panic.go:890 +0x263
+html/template.Must(...)
+	C:/Program Files/Go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x7ff6bfb73490?, 0xc0001b2700}, {0x7ff6bfa64700, 0x7ff6bfb70780}, {0xc000073a28?, 0x2, 0x7ff6bf67c866?})
+	C:/Users/owner/go_projects/todo_app/app/controllers/server.go:17 +0x237
+todo_app/app/controllers.top({0x7ff6bfb73490?, 0xc0001b2700?}, 0xffffffffffffffff?)
+	C:/Users/owner/go_projects/todo_app/app/controllers/route_main.go:10 +0x75
+net/http.HandlerFunc.ServeHTTP(0xc0000f0500?, {0x7ff6bfb73490?, 0xc0001b2700?}, 0x7ff6bf5aecc8?)
+	C:/Program Files/Go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x7ff6bfb73490, 0xc0001b2700}, 0xc000192300)
+	C:/Program Files/Go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000182600?}, {0x7ff6bfb73490, 0xc0001b2700}, 0xc000192300)
+	C:/Program Files/Go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc0000a85a0, {0x7ff6bfb73758, 0xc00007b860})
+	C:/Program Files/Go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3089 +0x5ed
+2023/04/18 08:23:49 server.go:3217: http: panic serving 127.0.0.1:54405: open /app/views/templates/layout.html: The system cannot find the path specified.
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1854 +0xbf
+panic({0x7ff65b79a020, 0xc000182150})
+	C:/Program Files/Go/src/runtime/panic.go:890 +0x263
+html/template.Must(...)
+	C:/Program Files/Go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x7ff65b8844d0?, 0xc0001b8000}, {0x7ff65b775700, 0x7ff65b8817d0}, {0xc000099a28?, 0x2, 0x7ff65b38c866?})
+	C:/Users/owner/go_projects/todo_app/app/controllers/server.go:17 +0x237
+todo_app/app/controllers.top({0x7ff65b8844d0?, 0xc0001b8000?}, 0xffffffffffffffff?)
+	C:/Users/owner/go_projects/todo_app/app/controllers/route_main.go:10 +0x75
+net/http.HandlerFunc.ServeHTTP(0xc0000cdb80?, {0x7ff65b8844d0?, 0xc0001b8000?}, 0x7ff65b2becc8?)
+	C:/Program Files/Go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x7ff65b8844d0, 0xc0001b8000}, 0xc000068000)
+	C:/Program Files/Go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000024060?}, {0x7ff65b8844d0, 0xc0001b8000}, 0xc000068000)
+	C:/Program Files/Go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00010c090, {0x7ff65b884798, 0xc0000bd830})
+	C:/Program Files/Go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3089 +0x5ed
+2023/04/18 08:23:50 server.go:3217: http: panic serving 127.0.0.1:54406: open /app/views/templates/layout.html: The system cannot find the path specified.
+goroutine 21 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1854 +0xbf
+panic({0x7ff65b79a020, 0xc000182240})
+	C:/Program Files/Go/src/runtime/panic.go:890 +0x263
+html/template.Must(...)
+	C:/Program Files/Go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x7ff65b8844d0?, 0xc0001b81c0}, {0x7ff65b775700, 0x7ff65b8817d0}, {0xc000197a28?, 0x2, 0x7ff65b38c866?})
+	C:/Users/owner/go_projects/todo_app/app/controllers/server.go:17 +0x237
+todo_app/app/controllers.top({0x7ff65b8844d0?, 0xc0001b81c0?}, 0xffffffffffffffff?)
+	C:/Users/owner/go_projects/todo_app/app/controllers/route_main.go:10 +0x75
+net/http.HandlerFunc.ServeHTTP(0xc000118000?, {0x7ff65b8844d0?, 0xc0001b81c0?}, 0x7ff65b2becc8?)
+	C:/Program Files/Go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x7ff65b8844d0, 0xc0001b81c0}, 0xc00018e000)
+	C:/Program Files/Go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000182030?}, {0x7ff65b8844d0, 0xc0001b81c0}, 0xc00018e000)
+	C:/Program Files/Go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00010c120, {0x7ff65b884798, 0xc0000bd830})
+	C:/Program Files/Go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3089 +0x5ed
+2023/04/18 08:23:50 server.go:3217: http: panic serving 127.0.0.1:54407: open /app/views/templates/layout.html: The system cannot find the path specified.
+goroutine 36 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1854 +0xbf
+panic({0x7ff65b79a020, 0xc0000bda40})
+	C:/Program Files/Go/src/runtime/panic.go:890 +0x263
+html/template.Must(...)
+	C:/Program Files/Go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x7ff65b8844d0?, 0xc00012a000}, {0x7ff65b775700, 0x7ff65b8817d0}, {0xc00009da28?, 0x2, 0x7ff65b38c866?})
+	C:/Users/owner/go_projects/todo_app/app/controllers/server.go:17 +0x237
+todo_app/app/controllers.top({0x7ff65b8844d0?, 0xc00012a000?}, 0xffffffffffffffff?)
+	C:/Users/owner/go_projects/todo_app/app/controllers/route_main.go:10 +0x75
+net/http.HandlerFunc.ServeHTTP(0xc000222000?, {0x7ff65b8844d0?, 0xc00012a000?}, 0x7ff65b2becc8?)
+	C:/Program Files/Go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x7ff65b8844d0, 0xc00012a000}, 0xc000104200)
+	C:/Program Files/Go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000bd980?}, {0x7ff65b8844d0, 0xc00012a000}, 0xc000104200)
+	C:/Program Files/Go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00019a240, {0x7ff65b884798, 0xc0000bd830})
+	C:/Program Files/Go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3089 +0x5ed
+2023/04/18 08:23:51 server.go:3217: http: panic serving 127.0.0.1:54408: open /app/views/templates/layout.html: The system cannot find the path specified.
+goroutine 23 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1854 +0xbf
+panic({0x7ff65b79a020, 0xc0000bdbc0})
+	C:/Program Files/Go/src/runtime/panic.go:890 +0x263
+html/template.Must(...)
+	C:/Program Files/Go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x7ff65b8844d0?, 0xc00012a1c0}, {0x7ff65b775700, 0x7ff65b8817d0}, {0xc000159a28?, 0x2, 0x7ff65b38c866?})
+	C:/Users/owner/go_projects/todo_app/app/controllers/server.go:17 +0x237
+todo_app/app/controllers.top({0x7ff65b8844d0?, 0xc00012a1c0?}, 0xffffffffffffffff?)
+	C:/Users/owner/go_projects/todo_app/app/controllers/route_main.go:10 +0x75
+net/http.HandlerFunc.ServeHTTP(0xc000118280?, {0x7ff65b8844d0?, 0xc00012a1c0?}, 0x7ff65b2becc8?)
+	C:/Program Files/Go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x7ff65b8844d0, 0xc00012a1c0}, 0xc000104300)
+	C:/Program Files/Go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000bdb00?}, {0x7ff65b8844d0, 0xc00012a1c0}, 0xc000104300)
+	C:/Program Files/Go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00010c2d0, {0x7ff65b884798, 0xc0000bd830})
+	C:/Program Files/Go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3089 +0x5ed
+2023/04/18 08:23:51 server.go:3217: http: panic serving 127.0.0.1:54409: open /app/views/templates/layout.html: The system cannot find the path specified.
+goroutine 37 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1854 +0xbf
+panic({0x7ff65b79a020, 0xc0000bdcb0})
+	C:/Program Files/Go/src/runtime/panic.go:890 +0x263
+html/template.Must(...)
+	C:/Program Files/Go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x7ff65b8844d0?, 0xc00012a380}, {0x7ff65b775700, 0x7ff65b8817d0}, {0xc00009da28?, 0x2, 0x7ff65b38c866?})
+	C:/Users/owner/go_projects/todo_app/app/controllers/server.go:17 +0x237
+todo_app/app/controllers.top({0x7ff65b8844d0?, 0xc00012a380?}, 0xffffffffffffffff?)
+	C:/Users/owner/go_projects/todo_app/app/controllers/route_main.go:10 +0x75
+net/http.HandlerFunc.ServeHTTP(0xc000222280?, {0x7ff65b8844d0?, 0xc00012a380?}, 0x7ff65b2becc8?)
+	C:/Program Files/Go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x7ff65b8844d0, 0xc00012a380}, 0xc00018e200)
+	C:/Program Files/Go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001823c0?}, {0x7ff65b8844d0, 0xc00012a380}, 0xc00018e200)
+	C:/Program Files/Go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00019a2d0, {0x7ff65b884798, 0xc0000bd830})
+	C:/Program Files/Go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3089 +0x5ed
+2023/04/18 08:23:51 server.go:3217: http: panic serving 127.0.0.1:54410: open /app/views/templates/layout.html: The system cannot find the path specified.
+goroutine 26 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1854 +0xbf
+panic({0x7ff65b79a020, 0xc0000241b0})
+	C:/Program Files/Go/src/runtime/panic.go:890 +0x263
+html/template.Must(...)
+	C:/Program Files/Go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x7ff65b8844d0?, 0xc000074000}, {0x7ff65b775700, 0x7ff65b8817d0}, {0xc000155a28?, 0x2, 0x7ff65b38c866?})
+	C:/Users/owner/go_projects/todo_app/app/controllers/server.go:17 +0x237
+todo_app/app/controllers.top({0x7ff65b8844d0?, 0xc000074000?}, 0xffffffffffffffff?)
+	C:/Users/owner/go_projects/todo_app/app/controllers/route_main.go:10 +0x75
+net/http.HandlerFunc.ServeHTTP(0xc000118500?, {0x7ff65b8844d0?, 0xc000074000?}, 0x7ff65b2becc8?)
+	C:/Program Files/Go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x7ff65b8844d0, 0xc000074000}, 0xc000068100)
+	C:/Program Files/Go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000240f0?}, {0x7ff65b8844d0, 0xc000074000}, 0xc000068100)
+	C:/Program Files/Go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00010c5a0, {0x7ff65b884798, 0xc0000bd830})
+	C:/Program Files/Go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3089 +0x5ed
+2023/04/18 08:23:52 server.go:3217: http: panic serving 127.0.0.1:54411: open /app/views/templates/layout.html: The system cannot find the path specified.
+goroutine 6 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1854 +0xbf
+panic({0x7ff65b79a020, 0xc000024330})
+	C:/Program Files/Go/src/runtime/panic.go:890 +0x263
+html/template.Must(...)
+	C:/Program Files/Go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x7ff65b8844d0?, 0xc0000741c0}, {0x7ff65b775700, 0x7ff65b8817d0}, {0xc000099a28?, 0x2, 0x7ff65b38c866?})
+	C:/Users/owner/go_projects/todo_app/app/controllers/server.go:17 +0x237
+todo_app/app/controllers.top({0x7ff65b8844d0?, 0xc0000741c0?}, 0xffffffffffffffff?)
+	C:/Users/owner/go_projects/todo_app/app/controllers/route_main.go:10 +0x75
+net/http.HandlerFunc.ServeHTTP(0xc000296000?, {0x7ff65b8844d0?, 0xc0000741c0?}, 0x7ff65b2becc8?)
+	C:/Program Files/Go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x7ff65b8844d0, 0xc0000741c0}, 0xc00018e300)
+	C:/Program Files/Go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000182420?}, {0x7ff65b8844d0, 0xc0000741c0}, 0xc00018e300)
+	C:/Program Files/Go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00006a120, {0x7ff65b884798, 0xc0000bd830})
+	C:/Program Files/Go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3089 +0x5ed
+2023/04/18 08:23:57 server.go:3217: http: panic serving 127.0.0.1:54413: open /app/views/templates/layout.html: The system cannot find the path specified.
+goroutine 8 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1854 +0xbf
+panic({0x7ff65b79a020, 0xc0000bde90})
+	C:/Program Files/Go/src/runtime/panic.go:890 +0x263
+html/template.Must(...)
+	C:/Program Files/Go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x7ff65b8844d0?, 0xc00012a540}, {0x7ff65b775700, 0x7ff65b8817d0}, {0xc00009da28?, 0x2, 0x7ff65b38c866?})
+	C:/Users/owner/go_projects/todo_app/app/controllers/server.go:17 +0x237
+todo_app/app/controllers.top({0x7ff65b8844d0?, 0xc00012a540?}, 0xffffffffffffffff?)
+	C:/Users/owner/go_projects/todo_app/app/controllers/route_main.go:10 +0x75
+net/http.HandlerFunc.ServeHTTP(0xc000296280?, {0x7ff65b8844d0?, 0xc00012a540?}, 0x7ff65b2becc8?)
+	C:/Program Files/Go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x7ff65b8844d0, 0xc00012a540}, 0xc000104400)
+	C:/Program Files/Go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000bddd0?}, {0x7ff65b8844d0, 0xc00012a540}, 0xc000104400)
+	C:/Program Files/Go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00006a2d0, {0x7ff65b884798, 0xc0000bd830})
+	C:/Program Files/Go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3089 +0x5ed
+2023/04/18 08:29:24 server.go:3217: http: panic serving 127.0.0.1:54659: open /app/views/templates/top.html: The system cannot find the path specified.
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1854 +0xbf
+panic({0x7ff7d1cd9020, 0xc000182150})
+	C:/Program Files/Go/src/runtime/panic.go:890 +0x263
+html/template.Must(...)
+	C:/Program Files/Go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x7ff7d1dc34b0?, 0xc0001b2000}, {0x7ff7d1cb4700, 0x7ff7d1dc07b0}, {0x0?, 0xc00006fa30?, 0x7ff7d18cc866?})
+	C:/Users/owner/go_projects/todo_app/app/controllers/server.go:16 +0xcb
+todo_app/app/controllers.top({0x7ff7d1dc34b0?, 0xc0001b2000?}, 0xffffffffffffffff?)
+	C:/Users/owner/go_projects/todo_app/app/controllers/route_main.go:10 +0x75
+net/http.HandlerFunc.ServeHTTP(0xc00007db80?, {0x7ff7d1dc34b0?, 0xc0001b2000?}, 0x7ff7d17fecc8?)
+	C:/Program Files/Go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x7ff7d1dc34b0, 0xc0001b2000}, 0xc000192000)
+	C:/Program Files/Go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000182030?}, {0x7ff7d1dc34b0, 0xc0001b2000}, 0xc000192000)
+	C:/Program Files/Go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00014a090, {0x7ff7d1dc3778, 0xc00007b860})
+	C:/Program Files/Go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3089 +0x5ed
+2023/04/18 08:29:54 server.go:3217: http: panic serving 127.0.0.1:54670: open /app/views/templates/top.html: The system cannot find the path specified.
+goroutine 19 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1854 +0xbf
+panic({0x7ff7d1cd9020, 0xc000182360})
+	C:/Program Files/Go/src/runtime/panic.go:890 +0x263
+html/template.Must(...)
+	C:/Program Files/Go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x7ff7d1dc34b0?, 0xc0001b21c0}, {0x7ff7d1cb4700, 0x7ff7d1dc07b0}, {0x0?, 0xc000073a30?, 0x7ff7d18cc866?})
+	C:/Users/owner/go_projects/todo_app/app/controllers/server.go:16 +0xcb
+todo_app/app/controllers.top({0x7ff7d1dc34b0?, 0xc0001b21c0?}, 0xffffffffffffffff?)
+	C:/Users/owner/go_projects/todo_app/app/controllers/route_main.go:10 +0x75
+net/http.HandlerFunc.ServeHTTP(0xc000206000?, {0x7ff7d1dc34b0?, 0xc0001b21c0?}, 0x7ff7d17fecc8?)
+	C:/Program Files/Go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x7ff7d1dc34b0, 0xc0001b21c0}, 0xc000142200)
+	C:/Program Files/Go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc00007b9b0?}, {0x7ff7d1dc34b0, 0xc0001b21c0}, 0xc000142200)
+	C:/Program Files/Go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc000194120, {0x7ff7d1dc3778, 0xc00007b860})
+	C:/Program Files/Go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3089 +0x5ed
+2023/04/18 08:30:54 server.go:3217: http: panic serving 127.0.0.1:54702: open /app/views/templates/top.html: The system cannot find the path specified.
+goroutine 21 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1854 +0xbf
+panic({0x7ff7d1cd9020, 0xc00007bad0})
+	C:/Program Files/Go/src/runtime/panic.go:890 +0x263
+html/template.Must(...)
+	C:/Program Files/Go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x7ff7d1dc34b0?, 0xc000158000}, {0x7ff7d1cb4700, 0x7ff7d1dc07b0}, {0x0?, 0xc00009fa30?, 0x7ff7d18cc866?})
+	C:/Users/owner/go_projects/todo_app/app/controllers/server.go:16 +0xcb
+todo_app/app/controllers.top({0x7ff7d1dc34b0?, 0xc000158000?}, 0xffffffffffffffff?)
+	C:/Users/owner/go_projects/todo_app/app/controllers/route_main.go:10 +0x75
+net/http.HandlerFunc.ServeHTTP(0xc000206280?, {0x7ff7d1dc34b0?, 0xc000158000?}, 0x7ff7d17fecc8?)
+	C:/Program Files/Go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x7ff7d1dc34b0, 0xc000158000}, 0xc000192300)
+	C:/Program Files/Go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000182420?}, {0x7ff7d1dc34b0, 0xc000158000}, 0xc000192300)
+	C:/Program Files/Go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc0001942d0, {0x7ff7d1dc3778, 0xc00007b860})
+	C:/Program Files/Go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3089 +0x5ed
+2023/04/18 08:34:49 server.go:3217: http: panic serving 127.0.0.1:55247: open /app/views/templates/layout.html: The system cannot find the path specified.
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1854 +0xbf
+panic({0x7ff6d10ea020, 0xc0001860c0})
+	C:/Program Files/Go/src/runtime/panic.go:890 +0x263
+html/template.Must(...)
+	C:/Program Files/Go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x7ff6d11d44d0?, 0xc0001a6000}, {0x7ff6d10c5700, 0x7ff6d11d17d0}, {0xc000099a28?, 0x2, 0x7ff6d0cdc866?})
+	C:/Users/owner/go_projects/todo_app/app/controllers/server.go:17 +0x237
+todo_app/app/controllers.top({0x7ff6d11d44d0?, 0xc0001a6000?}, 0xffffffffffffffff?)
+	C:/Users/owner/go_projects/todo_app/app/controllers/route_main.go:10 +0x75
+net/http.HandlerFunc.ServeHTTP(0xc0000cdb80?, {0x7ff6d11d44d0?, 0xc0001a6000?}, 0x7ff6d0c0ecc8?)
+	C:/Program Files/Go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x7ff6d11d44d0, 0xc0001a6000}, 0xc000068000)
+	C:/Program Files/Go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000024060?}, {0x7ff6d11d44d0, 0xc0001a6000}, 0xc000068000)
+	C:/Program Files/Go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00010c090, {0x7ff6d11d4798, 0xc0000bd830})
+	C:/Program Files/Go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3089 +0x5ed
+2023/04/18 08:35:47 server.go:3217: http: panic serving 127.0.0.1:55308: open /app/views/templates/layout.html: The system cannot find the path specified.
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1854 +0xbf
+panic({0x7ff73be7a020, 0xc00008c1e0})
+	C:/Program Files/Go/src/runtime/panic.go:890 +0x263
+html/template.Must(...)
+	C:/Program Files/Go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x7ff73bf644f0?, 0xc0000c0000}, {0x7ff73be55700, 0x7ff73bf617f0}, {0xc00006fa28?, 0x2, 0x7ff73ba6c866?})
+	C:/Users/owner/go_projects/todo_app/app/controllers/server.go:17 +0x237
+todo_app/app/controllers.top({0x7ff73bf644f0?, 0xc0000c0000?}, 0xffffffffffffffff?)
+	C:/Users/owner/go_projects/todo_app/app/controllers/route_main.go:10 +0x75
+net/http.HandlerFunc.ServeHTTP(0xc00007db80?, {0x7ff73bf644f0?, 0xc0000c0000?}, 0x7ff73b99ecc8?)
+	C:/Program Files/Go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x7ff73bf644f0, 0xc0000c0000}, 0xc000098000)
+	C:/Program Files/Go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc00008c030?}, {0x7ff73bf644f0, 0xc0000c0000}, 0xc000098000)
+	C:/Program Files/Go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00014a090, {0x7ff73bf647b8, 0xc00007b860})
+	C:/Program Files/Go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3089 +0x5ed
+2023/04/18 08:38:47 server.go:3217: http: panic serving 127.0.0.1:55435: open /app/views/templates/layout.html: The system cannot find the path specified.
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1854 +0xbf
+panic({0x7ff7b9daa020, 0xc00008c1e0})
+	C:/Program Files/Go/src/runtime/panic.go:890 +0x263
+html/template.Must(...)
+	C:/Program Files/Go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x7ff7b9e944f0?, 0xc0000c0000}, {0xc0000c0040?, 0x800?}, {0xc00006fa28?, 0x2, 0x7ff7b999c866?})
+	C:/Users/owner/go_projects/todo_app/app/controllers/server.go:17 +0x1fb
+todo_app/app/controllers.top({0x7ff7b9e944f0?, 0xc0000c0000?}, 0xffffffffffffffff?)
+	C:/Users/owner/go_projects/todo_app/app/controllers/route_main.go:10 +0x75
+net/http.HandlerFunc.ServeHTTP(0xc00007db80?, {0x7ff7b9e944f0?, 0xc0000c0000?}, 0x7ff7b98cecc8?)
+	C:/Program Files/Go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x7ff7b9e944f0, 0xc0000c0000}, 0xc000098000)
+	C:/Program Files/Go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc00008c030?}, {0x7ff7b9e944f0, 0xc0000c0000}, 0xc000098000)
+	C:/Program Files/Go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00014a090, {0x7ff7b9e947b8, 0xc00007b860})
+	C:/Program Files/Go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3089 +0x5ed
+2023/04/18 08:50:51 server.go:3217: http: panic serving 127.0.0.1:55970: open /app/views/templates/layout.html: The system cannot find the path specified.
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1854 +0xbf
+panic({0x7ff7502ca020, 0xc000182150})
+	C:/Program Files/Go/src/runtime/panic.go:890 +0x263
+html/template.Must(...)
+	C:/Program Files/Go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x7ff7503b44f0?, 0xc0001b2000}, {0x7ff7502a5700, 0x7ff7503b17f0}, {0xc000099a28?, 0x2, 0x7ff74febc866?})
+	C:/Users/owner/go_projects/todo_app/app/controllers/server.go:18 +0x273
+todo_app/app/controllers.top({0x7ff7503b44f0?, 0xc0001b2000?}, 0xffffffffffffffff?)
+	C:/Users/owner/go_projects/todo_app/app/controllers/route_main.go:10 +0x75
+net/http.HandlerFunc.ServeHTTP(0xc0000cdb80?, {0x7ff7503b44f0?, 0xc0001b2000?}, 0x7ff74fdeecc8?)
+	C:/Program Files/Go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x7ff7503b44f0, 0xc0001b2000}, 0xc000192000)
+	C:/Program Files/Go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000182030?}, {0x7ff7503b44f0, 0xc0001b2000}, 0xc000192000)
+	C:/Program Files/Go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00010c090, {0x7ff7503b47b8, 0xc0000bd830})
+	C:/Program Files/Go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3089 +0x5ed
+2023/04/18 08:50:51 server.go:3217: http: panic serving 127.0.0.1:55971: open /app/views/templates/layout.html: The system cannot find the path specified.
+goroutine 21 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1854 +0xbf
+panic({0x7ff7502ca020, 0xc000182240})
+	C:/Program Files/Go/src/runtime/panic.go:890 +0x263
+html/template.Must(...)
+	C:/Program Files/Go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x7ff7503b44f0?, 0xc0001b21c0}, {0x7ff7502a5700, 0x7ff7503b17f0}, {0xc000071a28?, 0x2, 0x7ff74febc866?})
+	C:/Users/owner/go_projects/todo_app/app/controllers/server.go:18 +0x273
+todo_app/app/controllers.top({0x7ff7503b44f0?, 0xc0001b21c0?}, 0xffffffffffffffff?)
+	C:/Users/owner/go_projects/todo_app/app/controllers/route_main.go:10 +0x75
+net/http.HandlerFunc.ServeHTTP(0xc000118000?, {0x7ff7503b44f0?, 0xc0001b21c0?}, 0x7ff74fdeecc8?)
+	C:/Program Files/Go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x7ff7503b44f0, 0xc0001b21c0}, 0xc000068000)
+	C:/Program Files/Go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000024060?}, {0x7ff7503b44f0, 0xc0001b21c0}, 0xc000068000)
+	C:/Program Files/Go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00010c120, {0x7ff7503b47b8, 0xc0000bd830})
+	C:/Program Files/Go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3089 +0x5ed
+2023/04/18 08:50:51 server.go:3217: http: panic serving 127.0.0.1:55972: open /app/views/templates/layout.html: The system cannot find the path specified.
+goroutine 50 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1854 +0xbf
+panic({0x7ff7502ca020, 0xc000284150})
+	C:/Program Files/Go/src/runtime/panic.go:890 +0x263
+html/template.Must(...)
+	C:/Program Files/Go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x7ff7503b44f0?, 0xc0002b6000}, {0x7ff7502a5700, 0x7ff7503b17f0}, {0xc00006da28?, 0x2, 0x7ff74febc866?})
+	C:/Users/owner/go_projects/todo_app/app/controllers/server.go:18 +0x273
+todo_app/app/controllers.top({0x7ff7503b44f0?, 0xc0002b6000?}, 0xffffffffffffffff?)
+	C:/Users/owner/go_projects/todo_app/app/controllers/route_main.go:10 +0x75
+net/http.HandlerFunc.ServeHTTP(0xc000280000?, {0x7ff7503b44f0?, 0xc0002b6000?}, 0x7ff74fdeecc8?)
+	C:/Program Files/Go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x7ff7503b44f0, 0xc0002b6000}, 0xc00029e000)
+	C:/Program Files/Go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000284090?}, {0x7ff7503b44f0, 0xc0002b6000}, 0xc00029e000)
+	C:/Program Files/Go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc000288000, {0x7ff7503b47b8, 0xc0000bd830})
+	C:/Program Files/Go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3089 +0x5ed
+2023/04/18 08:53:35 server.go:3217: http: panic serving 127.0.0.1:56076: open /app/views/templates/layout.html: The system cannot find the path specified.
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1854 +0xbf
+panic({0x7ff60a90a020, 0xc00008c150})
+	C:/Program Files/Go/src/runtime/panic.go:890 +0x263
+html/template.Must(...)
+	C:/Program Files/Go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x7ff60a9f44d0?, 0xc0000b6000}, {0x7ff60a8e5700, 0x7ff60a9f17d0}, {0xc00006fa28?, 0x2, 0x7ff60a4fc866?})
+	C:/Users/owner/go_projects/todo_app/app/controllers/server.go:18 +0x273
+todo_app/app/controllers.top({0x7ff60a9f44d0?, 0xc0000b6000?}, 0xffffffffffffffff?)
+	C:/Users/owner/go_projects/todo_app/app/controllers/route_main.go:10 +0x75
+net/http.HandlerFunc.ServeHTTP(0xc00007db80?, {0x7ff60a9f44d0?, 0xc0000b6000?}, 0x7ff60a42ecc8?)
+	C:/Program Files/Go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x7ff60a9f44d0, 0xc0000b6000}, 0xc000098000)
+	C:/Program Files/Go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc00008c030?}, {0x7ff60a9f44d0, 0xc0000b6000}, 0xc000098000)
+	C:/Program Files/Go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00014a090, {0x7ff60a9f4798, 0xc00007b860})
+	C:/Program Files/Go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3089 +0x5ed
+2023/04/18 08:54:08 server.go:3217: http: panic serving 127.0.0.1:56085: open /app/views/templates/layout.html: The system cannot find the path specified.
+goroutine 19 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1854 +0xbf
+panic({0x7ff60a90a020, 0xc00007ba10})
+	C:/Program Files/Go/src/runtime/panic.go:890 +0x263
+html/template.Must(...)
+	C:/Program Files/Go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x7ff60a9f44d0?, 0xc000158000}, {0x7ff60a8e5700, 0x7ff60a9f17d0}, {0xc000193a28?, 0x2, 0x7ff60a4fc866?})
+	C:/Users/owner/go_projects/todo_app/app/controllers/server.go:18 +0x273
+todo_app/app/controllers.top({0x7ff60a9f44d0?, 0xc000158000?}, 0xffffffffffffffff?)
+	C:/Users/owner/go_projects/todo_app/app/controllers/route_main.go:10 +0x75
+net/http.HandlerFunc.ServeHTTP(0xc000208000?, {0x7ff60a9f44d0?, 0xc000158000?}, 0x7ff60a42ecc8?)
+	C:/Program Files/Go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x7ff60a9f44d0, 0xc000158000}, 0xc00018e100)
+	C:/Program Files/Go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001820c0?}, {0x7ff60a9f44d0, 0xc000158000}, 0xc00018e100)
+	C:/Program Files/Go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00009a120, {0x7ff60a9f4798, 0xc00007b860})
+	C:/Program Files/Go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3089 +0x5ed
+2023/04/18 08:57:28 server.go:3217: http: panic serving 127.0.0.1:56239: open /app/views/templates/layout.html: The system cannot find the path specified.
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1854 +0xbf
+panic({0x7ff7aef8a020, 0xc000108120})
+	C:/Program Files/Go/src/runtime/panic.go:890 +0x263
+html/template.Must(...)
+	C:/Program Files/Go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x7ff7af0744f0?, 0xc00013e000}, {0x7ff7aef65700, 0x7ff7af0717f0}, {0xc000073a28?, 0x2, 0x7ff7aeb7c866?})
+	C:/Users/owner/go_projects/todo_app/app/controllers/server.go:18 +0x273
+todo_app/app/controllers.top({0x7ff7af0744f0?, 0xc00013e000?}, 0xffffffffffffffff?)
+	C:/Users/owner/go_projects/todo_app/app/controllers/route_main.go:10 +0x75
+net/http.HandlerFunc.ServeHTTP(0xc00007db80?, {0x7ff7af0744f0?, 0xc00013e000?}, 0x7ff7aeaaecc8?)
+	C:/Program Files/Go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x7ff7af0744f0, 0xc00013e000}, 0xc0000c2200)
+	C:/Program Files/Go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc00007b950?}, {0x7ff7af0744f0, 0xc00013e000}, 0xc0000c2200)
+	C:/Program Files/Go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc0000ca090, {0x7ff7af0747b8, 0xc00007b860})
+	C:/Program Files/Go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3089 +0x5ed
+2023/04/18 08:57:28 server.go:3217: http: panic serving 127.0.0.1:56240: open /app/views/templates/layout.html: The system cannot find the path specified.
+goroutine 18 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1854 +0xbf
+panic({0x7ff7aef8a020, 0xc000108210})
+	C:/Program Files/Go/src/runtime/panic.go:890 +0x263
+html/template.Must(...)
+	C:/Program Files/Go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x7ff7af0744f0?, 0xc00013e1c0}, {0x7ff7aef65700, 0x7ff7af0717f0}, {0xc00006fa28?, 0x2, 0x7ff7aeb7c866?})
+	C:/Users/owner/go_projects/todo_app/app/controllers/server.go:18 +0x273
+todo_app/app/controllers.top({0x7ff7af0744f0?, 0xc00013e1c0?}, 0xffffffffffffffff?)
+	C:/Users/owner/go_projects/todo_app/app/controllers/route_main.go:10 +0x75
+net/http.HandlerFunc.ServeHTTP(0xc000104000?, {0x7ff7af0744f0?, 0xc00013e1c0?}, 0x7ff7aeaaecc8?)
+	C:/Program Files/Go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x7ff7af0744f0, 0xc00013e1c0}, 0xc000194000)
+	C:/Program Files/Go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000188030?}, {0x7ff7af0744f0, 0xc00013e1c0}, 0xc000194000)
+	C:/Program Files/Go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00010c000, {0x7ff7af0747b8, 0xc00007b860})
+	C:/Program Files/Go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3089 +0x5ed
+2023/04/18 08:57:28 server.go:3217: http: panic serving 127.0.0.1:56241: open /app/views/templates/layout.html: The system cannot find the path specified.
+goroutine 34 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1854 +0xbf
+panic({0x7ff7aef8a020, 0xc000108330})
+	C:/Program Files/Go/src/runtime/panic.go:890 +0x263
+html/template.Must(...)
+	C:/Program Files/Go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x7ff7af0744f0?, 0xc00013e380}, {0x7ff7aef65700, 0x7ff7af0717f0}, {0xc000073a28?, 0x2, 0x7ff7aeb7c866?})
+	C:/Users/owner/go_projects/todo_app/app/controllers/server.go:18 +0x273
+todo_app/app/controllers.top({0x7ff7af0744f0?, 0xc00013e380?}, 0xffffffffffffffff?)
+	C:/Users/owner/go_projects/todo_app/app/controllers/route_main.go:10 +0x75
+net/http.HandlerFunc.ServeHTTP(0xc000196000?, {0x7ff7af0744f0?, 0xc00013e380?}, 0x7ff7aeaaecc8?)
+	C:/Program Files/Go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x7ff7af0744f0, 0xc00013e380}, 0xc000164100)
+	C:/Program Files/Go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000108270?}, {0x7ff7af0744f0, 0xc00013e380}, 0xc000164100)
+	C:/Program Files/Go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00019c000, {0x7ff7af0747b8, 0xc00007b860})
+	C:/Program Files/Go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3089 +0x5ed
+2023/04/18 08:59:32 server.go:21: html/template: "app/views/templates/layout.html" is undefined
+2023/04/18 09:08:21 server.go:21: html/template:layout.html:13:15: no such template "navbar"
+2023/04/18 09:10:44 server.go:21: html/template:layout.html:13:15: no such template "navbar"
+2023/04/18 09:16:15 server.go:21: html/template:layout.html:13:15: no such template "navbar"
+2023/04/18 09:26:26 server.go:21: html/template:layout.html:13:15: no such template "navbar"
+2023/04/18 09:28:06 server.go:21: html/template:layout.html:13:15: no such template "navbar"
+2023/04/18 09:38:35 server.go:21: html/template:layout.html:13:15: no such template "navbar"
